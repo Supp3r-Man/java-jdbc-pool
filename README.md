@@ -189,7 +189,7 @@ A full run took roughly 25 to 30 minutes on my Windows machine (about 1 minute p
   housekeeping thread, so many slow pings delay the other housekeeping work.
 - Shutdown force-closes connections still lent after the deadline; their holders see driver errors on next use.
 - Under extreme contention the single lock will be the limit; I did not measure where.
-- CI: the workflow is included; CI not yet confirmed.
+- CI: the workflow is included. CI ran green on the first run on GitHub Actions (Java 17 and 21, ubuntu-latest, 2026-10-20).
 
 ## Layout
 
